@@ -9,6 +9,7 @@ using Manufacturing.DataCollector.Api;
 using Manufacturing.DataCollector.Datasources;
 using Manufacturing.DataPusher;
 using Manufacturing.DevRunner.Services;
+using Manufacturing.FacilityDataProcessor;
 using Manufacturing.Framework.Configuration;
 using Manufacturing.Framework.Logging;
 using StructureMap;
