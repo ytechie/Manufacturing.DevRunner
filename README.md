@@ -8,7 +8,7 @@ This project is part of a series of projects that are designed to serve as a ref
 ### This framework is...
 
 * focused on the MES portion of discrete manufacturing.
-an end-to-end data pipeline capable of pulling data from existing systems (using adapters) and ultimately display that information and provide self-service business intelligence.
+* an end-to-end data pipeline capable of pulling data from existing systems (using adapters) and ultimately display that information and provide self-service business intelligence.
 * decomposable - components are interface-based so that any portions can be used individually. Use as little or as much as you like.
 extensible - because of the modular design approach, the framework can be extended limitlessly.
 * open source - licensed under the Apache 2 license
@@ -45,8 +45,17 @@ To get all of the manufacturing sample projects, clone all of the repositories, 
 	git clone https://github.com/ytechie/Manufacturing.DataPusher
 	git clone https://github.com/ytechie/Manufacturing.FacilityDataReceiver
 	git clone https://github.com/ytechie/Manufacturing.DevRunner
+	git clone https://github.com/ytechie/Manufacturing.Azure
 
-Open PowerShell as an administrator and execute `Set-ExecutionPolicy Unrestricted` to allow the PowerShell script to run. Then, navigate to `Manufacturing.DevRunner/scripts`. Execute `./installDev.ps1`. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components. Once you have run this script, feel free to run `Set-ExecutionPolicy Restricted` to change your PowerShell policy back to the default.
+Open PowerShell as an administrator and execute the following. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components.
+
+Sample commands:
+
+	Set-ExecutionPolicy Unrestricted
+	cd Manufacturing.DevRunner\scripts
+	./installDev.ps1
+
+Once you have run this script, feel free to run `Set-ExecutionPolicy Restricted` to change your PowerShell policy back to the default.
 
 ### Configuration
 
