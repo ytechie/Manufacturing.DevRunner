@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manufacturing.DataCollector", "..\Manufacturing.DataCollector\Manufacturing.DataCollector.csproj", "{463744C8-B6F6-4F80-BFD0-E6129B535EF6}"
 EndProject
@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F305C7
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Manufacturing.Azure", "..\Manufacturing.Azure\Manufacturing.Azure.ccproj", "{44025B46-8C02-4488-9810-314D61F255BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A8A3052B-3137-43E3-ACDB-0A515F849E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8A3052B-3137-43E3-ACDB-0A515F849E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8A3052B-3137-43E3-ACDB-0A515F849E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44025B46-8C02-4488-9810-314D61F255BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44025B46-8C02-4488-9810-314D61F255BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44025B46-8C02-4488-9810-314D61F255BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44025B46-8C02-4488-9810-314D61F255BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
