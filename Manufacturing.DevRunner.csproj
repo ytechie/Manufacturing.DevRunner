@@ -175,7 +175,11 @@
       <Project>{39c3585d-a22e-4b04-bebd-94c826c2918e}</Project>
       <Name>Manufacturing.FacilityDataProcessor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Manufacturing.Framework\Manufacturing.Framework.csproj">
+    <ProjectReference Include="..\Manufacturing.Framework\Dto\Manufacturing.Framework.Dto.csproj">
+      <Project>{32aefb8c-211a-406c-b0ee-35a9219b1147}</Project>
+      <Name>Manufacturing.Framework.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manufacturing.Framework\Framework\Manufacturing.Framework.csproj">
       <Project>{a8a3052b-3137-43e3-acdb-0a515f849e14}</Project>
       <Name>Manufacturing.Framework</Name>
     </ProjectReference>
