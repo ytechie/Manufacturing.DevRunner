@@ -24,7 +24,7 @@ extensible - because of the modular design approach, the framework can be extend
 * embedded. This framework is a level above the embedded device ecosystem, but can use data generated or collected by devices.
 * competing with partners already in this space. This is designed to help accelerate partner application development, and gives them opportunities to add their business value.
 
-# Project List
+# Key Project List
 
 [**Manufacturing.DevRunner**](https://github.com/ytechie/Manufacturing.DevRunner): Contains some of the common files to work with the various manufacturing project resources. It includes a solution file and a console application that makes it easy to run and develop.
 
@@ -46,6 +46,8 @@ To get all of the manufacturing sample projects, clone all of the repositories, 
 	git clone https://github.com/ytechie/Manufacturing.FacilityDataReceiver
 	git clone https://github.com/ytechie/Manufacturing.DevRunner
 	git clone https://github.com/ytechie/Manufacturing.Azure
+	git clone https://github.com/ytechie/Manufacturing.WinApp
+	git clone https://github.com/ytechie/Manufacturing.Api
 
 Open PowerShell as an administrator and execute the following. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components.
 
