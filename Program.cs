@@ -47,6 +47,7 @@ namespace Manufacturing.DevRunner
                 Console.WriteLine("5. Start Azure Blob Inserter");
                 Console.WriteLine("6. Start SignalR Relay");
                 Console.WriteLine("7. Start SQL DB Inserter");
+                Console.WriteLine("8. Start DocDB Inserter");
 
 
 
@@ -93,6 +94,11 @@ namespace Manufacturing.DevRunner
                 {
                     var sqlDb = _container.GetInstance<SqlDatabaseInsertService>();
                     sqlDb.Run();
+                }
+                if (key == '8' || key == '9')
+                {
+                    var docDb = _container.GetInstance<DocDbInsertService>();
+                    docDb.Run();
                 }
 
             } while (key != '0');
