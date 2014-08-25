@@ -36,6 +36,14 @@ extensible - because of the modular design approach, the framework can be extend
 
 [**Manufacturing.FacilityDataReceiver**](https://github.com/ytechie/Manufacturing.FacilityDataReceiver): An service that processes and dispatches data coming into the cloud.
 
+[**Manufacturing.Azure**](https://github.com/ytechie/Manufacturing.Azure): A cloud service project for Azure deployment.
+
+[**Manufacturing.WinApp**](https://github.com/ytechie/Manufacturing.WinApp): A Windows 8.1 demo application
+
+[**Manufacturing.Api**](https://github.com/ytechie/Manufacturing.Api): An API for interacting with the portion of the framework running in the cloud.
+
+[**Manufacturing.Orleans**](https://github.com/ytechie/Manufacturing.Orleans): An Orleans project for working with manufacturing sensors and other metadata.
+
 # Installation
 
 To get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory.
@@ -48,6 +56,7 @@ To get all of the manufacturing sample projects, clone all of the repositories, 
 	git clone https://github.com/ytechie/Manufacturing.Azure
 	git clone https://github.com/ytechie/Manufacturing.WinApp
 	git clone https://github.com/ytechie/Manufacturing.Api
+	git clone https://github.com/ytechie/Manufacturing.Orleans
 
 Open PowerShell as an administrator and execute the following. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components.
 
@@ -62,6 +71,28 @@ Once you have run this script, feel free to run `Set-ExecutionPolicy Restricted`
 ### Configuration
 
 After grabbing the source, you'll need to configure some parameters so that the pieces know how to talk to things like the Azure Service Bus. Look inside each project for a `Configuration` folder, and set the settings within the JSON files. These JSON files get loaded into classes at runtime using the [Convention Configuration](https://github.com/ytechie/ConventionConfig) library.
+
+### Project Planning
+
+Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manufacturing-framework).
+
+### Contributors
+
+#### Microsoft
+Jason Young
+Hanu Kommalapati
+Mike Zawacki
+Tony Guidici
+
+#### Skyline Technologies
+Kenny Young
+Greg Levanhagen
+Brandon Martinez
+Chris Plate
+Mike Tovbin
+Steve Nelson
+Paul Shepard
+Samuel Lees
 
 # License
 
