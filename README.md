@@ -79,20 +79,22 @@ Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manuf
 ### Contributors
 
 #### Microsoft
-Jason Young
-Hanu Kommalapati
-Mike Zawacki
-Tony Guidici
+
+* Jason Young
+* Hanu Kommalapati
+* Mike Zawacki
+* Tony Guidici
 
 #### Skyline Technologies
-Kenny Young
-Greg Levanhagen
-Brandon Martinez
-Chris Plate
-Mike Tovbin
-Steve Nelson
-Paul Shepard
-Samuel Lees
+
+* Kenny Young
+* Greg Levanhagen
+* Brandon Martinez
+* Chris Plate
+* Mike Tovbin
+* Steve Nelson
+* Paul Shepard
+* Samuel Lees
 
 # License
 
