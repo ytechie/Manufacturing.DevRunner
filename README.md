@@ -3,7 +3,7 @@ Manufacturing.DevRunner
 
 # Background
 
-This project is part of a series of sample projects focusing on the unique needs of manufacturing, choosing cloud technologies that align with the manufacturing plant of tomorrow.
+This project is part of a [series of sample projects](https://github.com/search?q=user%3Aytechie+Manufacturing.) focusing on the unique needs of manufacturing, choosing cloud technologies that align with the manufacturing plant of tomorrow.
 
 The projects can be used individually, as a group, or even just select portions. They're designed to be extremely modular and extensible.
 
