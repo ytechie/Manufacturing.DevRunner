@@ -92,10 +92,10 @@ Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manuf
 
 #### Microsoft
 
-* Jason Young
-* Hanu Kommalapati
+* [Jason Young](http://ytechie.com)
+* [Hanu Kommalapati](http://blogs.msdn.com/b/hanuk/)
 * Mike Zawacki
-* Tony Guidici
+* [Tony Guidici](http://blogs.msdn.com/b/tonyguid/)
 
 #### Skyline Technologies
 
