@@ -3,16 +3,24 @@ Manufacturing.DevRunner
 
 # Background
 
-This project is part of a series of projects that are designed to serve as a reference implementation focusing on the unique needs of discrete and process manufacturing, which more weight on the discrete portion.
+This project is part of a series of sample projects focusing on the unique needs of manufacturing, choosing cloud technologies that align with the manufacturing plant of tomorrow.
+
+The projects can be used individually, as a group, or even just select portions. They're designed to be extremely modular and extensible.
+
+![Next Generation Enterprise](documentation/assets/next-generation-enterprise.png)
+
+#### Azure / On-Premises Co-existence
+
+![Cloud & Manufacturing](documentation/assets/cloud-and-manufacturing.png)
 
 ### This framework is...
 
 * focused on the MES portion of discrete manufacturing.
 * an end-to-end data pipeline capable of pulling data from existing systems (using adapters) and ultimately display that information and provide self-service business intelligence.
 * decomposable - components are interface-based so that any portions can be used individually. Use as little or as much as you like.
-extensible - because of the modular design approach, the framework can be extended limitlessly.
-* open source - licensed under the Apache 2 license
-* using Microsoft technologies such as Windows Azure and Windows 8, although non-Microsoft technologies will be used where appropriate.
+* extensible - because of the modular design approach, the framework can be extended limitlessly.
+* open source - licensed under the [Apache 2 license](https://github.com/ytechie/Manufacturing.DevRunner/blob/master/LICENSE)
+* using Microsoft technologies such as Azure and Windows, although non-Microsoft technologies will be used where appropriate.
 * aligned with tomorrows manufacturing trends such as Industry 4.0.
 
 ### This framework is not...
@@ -25,6 +33,10 @@ extensible - because of the modular design approach, the framework can be extend
 * competing with partners already in this space. This is designed to help accelerate partner application development, and gives them opportunities to add their business value.
 
 # Key Project List
+
+![Manufacturing Projects](documentation/assets/projects.png)
+
+#### Navigate to each repo for documentation specific to that module:
 
 [**Manufacturing.DevRunner**](https://github.com/ytechie/Manufacturing.DevRunner): Contains some of the common files to work with the various manufacturing project resources. It includes a solution file and a console application that makes it easy to run and develop.
 
@@ -46,7 +58,7 @@ extensible - because of the modular design approach, the framework can be extend
 
 # Installation
 
-To get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory.
+You can certainly use any individual project, but if you want to get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory. Paste the following into your git prompt:
 
 	git clone https://github.com/ytechie/Manufacturing.Framework
 	git clone https://github.com/ytechie/Manufacturing.DataCollector
