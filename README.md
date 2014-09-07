@@ -58,7 +58,12 @@ The projects can be used individually, as a group, or even just select portions.
 
 # Installation
 
-You can certainly use any individual project, but if you want to get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory. Paste the following into your git prompt:
+### Development Environment Prerequisites
+1. Windows 8.1
+2. Visual Studio 2013
+3. [Windows Azure SDK 2.3](http://msdn.microsoft.com/en-us/library/azure/dn655054.aspx)
+
+You can certainly use any individual project, they're all designed to be independent pieces, but if you want to get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory. Paste the following into your git prompt:
 
 	git clone https://github.com/ytechie/Manufacturing.Framework
 	git clone https://github.com/ytechie/Manufacturing.DataCollector
@@ -84,9 +89,30 @@ Once you have run this script, feel free to run `Set-ExecutionPolicy Restricted`
 
 After grabbing the source, you'll need to configure some parameters so that the pieces know how to talk to things like the Azure Service Bus. Look inside each project for a `Configuration` folder, and set the settings within the JSON files. These JSON files get loaded into classes at runtime using the [Convention Configuration](https://github.com/ytechie/ConventionConfig) library.
 
+### Bootstrapping
+This project uses [Bootstrapper](https://bootstrapper.codeplex.com/), which provides a fluent interface for convention based loading of IoC modules and startup tasks.
+
+### Provider Model
+
+A provider model is used wherever possible to allow individual components to be used independently, substituted, or extended.
+
+[StructureMap](https://github.com/structuremap/structuremap) is used as the preferred IoC, or inversion of control container. It was chosen because of its [automatic configuration options](http://structuremap.github.io/registration/auto-registration-and-conventions/), easy to read error messages, a simple interface for extensibility, its popularity, its ability to [validate the configuration](http://structuremap.github.io/diagnostics/validating-container-configuration/), and its ability to easily [display the currently configured objects](http://structuremap.github.io/diagnostics/whatdoihave/).
+
+In each project, look for a class suffixed with *Container*. For example, *Manufacturing.DataPusher* has a class called `DataPusherContainer`. This class will always implement `IStructureMapRegistration` so that during application startup, the `Register` method of this class is called with the IoC container to configure. The general approach to IoC taken in these projects is to automatically resolve dependencies, and then programmatically handle edge cases with additional IoC configuration.
+
+### Logging
+Logging is done through the industry standard Log4Net project.
+
+* Logging is designed to never throw exceptions
+* Excellent performance
+	* Can buffer
+* Extreme flexibility configuring appenders
+* Can change appenders at runtime
+* For unit tests, a trace appender logs to the console, but there is also a UDP appender that can consolidate all streaming log messages in one location
+
 ### Project Planning
 
-Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manufacturing-framework).
+Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manufacturing-framework) for high-level tracking. Bugs should be reported to the corresponding repository issue tracker in GitHub.
 
 ### Contributors
 
