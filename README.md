@@ -126,7 +126,7 @@ Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manuf
 #### Skyline Technologies
 
 * Kenny Young
-* Greg Levanhagen
+* [Greg Levenhagen](http://greglevenhagen.com)
 * Brandon Martinez
 * Chris Plate
 * Mike Tovbin
