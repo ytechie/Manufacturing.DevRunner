@@ -61,7 +61,8 @@ The projects can be used individually, as a group, or even just select portions.
 ### Development Environment Prerequisites
 1. Windows 8.1
 2. Visual Studio 2013
-3. [Windows Azure SDK 2.3](http://msdn.microsoft.com/en-us/library/azure/dn655054.aspx)
+3. Windows Azure SDK 2.4
+4. [Orleans 0.9](http://aka.ms/orleans)
 
 You can certainly use any individual project, they're all designed to be independent pieces, but if you want to get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory. Paste the following into your git prompt:
 
