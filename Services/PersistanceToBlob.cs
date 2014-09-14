@@ -4,6 +4,7 @@ using System.Reflection;
 using Bootstrap.Extensions.StartupTasks;
 using Microsoft.FluentMessaging;
 using Manufacturing.Framework.Datasource;
+using Manufacturing.Framework.Dto;
 using Microsoft.Practices.ServiceLocation;
 using WorkerRoleWithSBQueue1.Configuration;
 using Manufacturing.Framework.Repository.Interface;
