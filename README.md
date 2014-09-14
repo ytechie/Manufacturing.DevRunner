@@ -133,6 +133,7 @@ Check out the [public Trello planning board](https://trello.com/b/CbdL95oD/manuf
 * Steve Nelson
 * Paul Shepard
 * Samuel Lees
+* [Carl Schweitzer](http://wpdevguy.com)
 
 # License
 
