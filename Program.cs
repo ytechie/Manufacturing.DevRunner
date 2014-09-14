@@ -92,7 +92,7 @@ namespace Manufacturing.DevRunner
                 }
                 if (key == '7' || key == '9')
                 {
-                    var sqlDb = _container.GetInstance<SqlDatabaseInsertService>();
+                    var sqlDb = _container.GetInstance<EventHubProcessor>();
                     sqlDb.Run();
                 }
                 if (key == '8' || key == '9')
