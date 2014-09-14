@@ -116,6 +116,7 @@ namespace Manufacturing.DevRunner
                 .AndAssembly(Assembly.GetAssembly(typeof(DataCollectorContainer)))
                 .AndAssembly(Assembly.GetAssembly(typeof(DataPusherContainer)))
                 .AndAssembly(Assembly.GetAssembly(typeof(WorkerRole)))
+                .AndAssembly(Assembly.GetAssembly(typeof(FaclityDataProcessorContainer)))
                 //.With.StartupTasks()
                 .Start();
 
