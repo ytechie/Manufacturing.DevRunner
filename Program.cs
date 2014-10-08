@@ -54,6 +54,8 @@ namespace Manufacturing.DevRunner
                 key = Console.ReadKey().KeyChar;
                 Console.WriteLine();
 
+                
+
                 if (key == 'l' || key == 'L' || key == '9')
                 {
                     const string url = "http://log4stuff.com/app/1E899147-44CC-43D9-8F38-0D1EB5CD1D39";
@@ -126,7 +128,7 @@ namespace Manufacturing.DevRunner
             var what = _container.WhatDoIHave();
 
             //Ensure our IoC is happy
-            _container.AssertConfigurationIsValid();
+            //_container.AssertConfigurationIsValid();
             Log.Debug("IoC configuration is valid");
 
             DisplayMenu();
