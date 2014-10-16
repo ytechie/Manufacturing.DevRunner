@@ -51,6 +51,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansFrontEnd", "..\Manuf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalSilo", "..\Manufacturing.Orleans\LocalSilo\LocalSilo.csproj", "{4D34A701-CAB0-4B2F-95C8-130ADFBCE758}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Manufacturing.Web", "http://localhost:53398", "{DDE20357-17F7-4214-AE6C-17834656A11B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53398"
+		Debug.AspNetCompiler.PhysicalPath = "..\Manufacturing.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53398\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53398"
+		Release.AspNetCompiler.PhysicalPath = "..\Manufacturing.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53398\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Manufacturing.Web\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +238,16 @@ Global
 		{4D34A701-CAB0-4B2F-95C8-130ADFBCE758}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4D34A701-CAB0-4B2F-95C8-130ADFBCE758}.Release|x64.ActiveCfg = Release|Any CPU
 		{4D34A701-CAB0-4B2F-95C8-130ADFBCE758}.Release|x86.ActiveCfg = Release|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Release|x64.ActiveCfg = Debug|Any CPU
+		{DDE20357-17F7-4214-AE6C-17834656A11B}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

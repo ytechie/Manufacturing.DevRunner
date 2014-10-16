@@ -56,6 +56,8 @@ The projects can be used individually, as a group, or even just select portions.
 
 [**Manufacturing.Orleans**](https://github.com/ytechie/Manufacturing.Orleans): An Orleans project for working with manufacturing sensors and other metadata.
 
+[**Manufacturing.Web**](https://github.com/ytechie/Manufacturing.Web): A web portal for users.
+
 # Installation
 
 ### Development Environment Prerequisites
@@ -75,6 +77,7 @@ You can certainly use any individual project, they're all designed to be indepen
 	git clone https://github.com/ytechie/Manufacturing.WinApp
 	git clone https://github.com/ytechie/Manufacturing.Api
 	git clone https://github.com/ytechie/Manufacturing.Orleans
+	git clone https://github.com/ytechie/Manufacturing.Web
 
 Open PowerShell as an administrator and execute the following. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components.
 
