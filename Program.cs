@@ -45,8 +45,7 @@ namespace Manufacturing.DevRunner
                 Console.WriteLine("3. Start Data Pusher (to send data from your local queue to Azure");
                 Console.WriteLine("4. Start Reactive Tester (to read from topic subscription)");
                 Console.WriteLine("5. Start Azure Blob Inserter");
-                Console.WriteLine("6. Start SignalR Relay");
-                Console.WriteLine("7. Start SQL DB Inserter");
+                Console.WriteLine("7. Start Event Hub Processors");
                 Console.WriteLine("8. Start DocDB Inserter");
 
 
@@ -86,11 +85,6 @@ namespace Manufacturing.DevRunner
                 {
                     var blobWriter = _container.GetInstance<DeviceDataBlobWriter>();
                     blobWriter.Run();
-                }
-                if (key == '6' || key == '9')
-                {
-                    var sqlDb = _container.GetInstance<SignalRRelayService>();
-                    sqlDb.Run();
                 }
                 if (key == '7' || key == '9')
                 {
