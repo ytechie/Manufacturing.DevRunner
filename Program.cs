@@ -8,12 +8,10 @@ using Manufacturing.DataCollector;
 using Manufacturing.DataCollector.Api;
 using Manufacturing.DataCollector.Datasources;
 using Manufacturing.DataPusher;
-using Manufacturing.DevRunner.Services;
 using Manufacturing.FacilityDataProcessor;
 using Manufacturing.Framework.Configuration;
 using Manufacturing.Framework.Logging;
 using StructureMap;
-using WorkerRoleWithSBQueue1;
 
 namespace Manufacturing.DevRunner
 {
@@ -43,17 +41,10 @@ namespace Manufacturing.DevRunner
                 Console.WriteLine("1. Start WebAPI Host (to receive records)");
                 Console.WriteLine("2. Start Datasource Scheduler (to generate records)");
                 Console.WriteLine("3. Start Data Pusher (to send data from your local queue to Azure");
-                Console.WriteLine("4. Start Reactive Tester (to read from topic subscription)");
-                Console.WriteLine("5. Start Azure Blob Inserter");
-                Console.WriteLine("7. Start Event Hub Processors");
-                Console.WriteLine("8. Start DocDB Inserter");
-
-
+                Console.WriteLine("4. Start Event Hub Processors");
 
                 key = Console.ReadKey().KeyChar;
                 Console.WriteLine();
-
-                
 
                 if (key == 'l' || key == 'L' || key == '9')
                 {
@@ -78,23 +69,8 @@ namespace Manufacturing.DevRunner
                 }
                 if (key == '4' || key == '9')
                 {
-                    var reactiveTest = _container.GetInstance<ReactiveTest>();
-                    reactiveTest.Run();
-                }
-                if (key == '5' || key == '9')
-                {
-                    var blobWriter = _container.GetInstance<DeviceDataBlobWriter>();
-                    blobWriter.Run();
-                }
-                if (key == '7' || key == '9')
-                {
-                    var sqlDb = _container.GetInstance<EventHubProcessor>();
-                    sqlDb.Run();
-                }
-                if (key == '8' || key == '9')
-                {
-                    var docDb = _container.GetInstance<DocDbInsertService>();
-                    docDb.Run();
+                    var eventHubProcessor = _container.GetInstance<EventHubProcessor>();
+                    eventHubProcessor.Run();
                 }
 
             } while (key != '0');
