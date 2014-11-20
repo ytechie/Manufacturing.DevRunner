@@ -93,6 +93,10 @@ Once you have run this script, feel free to run `Set-ExecutionPolicy Restricted`
 
 After grabbing the source, you'll need to configure some parameters so that the pieces know how to talk to things like the Azure Service Bus. Look inside each project for a `Configuration` folder, and set the settings within the JSON files. These JSON files get loaded into classes at runtime using the [Convention Configuration](https://github.com/ytechie/ConventionConfig) library.
 
+### Console Runner
+
+![Console Animated](documentation/assets/commandline-animated.gif)
+
 ### Bootstrapping
 This project uses [Bootstrapper](https://bootstrapper.codeplex.com/), which provides a fluent interface for convention based loading of IoC modules and startup tasks.
 
