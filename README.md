@@ -50,21 +50,17 @@ The projects can be used individually, as a group, or even just select portions.
 
 [**Manufacturing.Azure**](https://github.com/ytechie/Manufacturing.Azure): A cloud service project for Azure deployment.
 
-[**Manufacturing.WinApp**](https://github.com/ytechie/Manufacturing.WinApp): A Windows 8.1 demo application
-
 [**Manufacturing.Api**](https://github.com/ytechie/Manufacturing.Api): An API for interacting with the portion of the framework running in the cloud.
 
-[**Manufacturing.Orleans**](https://github.com/ytechie/Manufacturing.Orleans): An Orleans project for working with manufacturing sensors and other metadata.
+[**Manufacturing.Orleans**](https://github.com/ytechie/Manufacturing.Orleans): An experimental Orleans project for working with manufacturing sensors and other metadata.
 
 [**Manufacturing.Web**](https://github.com/ytechie/Manufacturing.Web): A web portal for users.
 
 # Installation
 
 ### Development Environment Prerequisites
-1. Windows 8.1
-2. Visual Studio 2013
-3. Windows Azure SDK 2.4
-4. [Orleans 0.9](http://aka.ms/orleans)
+1. Visual Studio 2013
+1. Windows Azure SDK 2.4
 
 You can certainly use any individual project, they're all designed to be independent pieces, but if you want to get all of the manufacturing sample projects, clone all of the repositories, preferably into a dedicated directory. Paste the following into your git prompt:
 
@@ -74,7 +70,6 @@ You can certainly use any individual project, they're all designed to be indepen
 	git clone https://github.com/ytechie/Manufacturing.FacilityDataReceiver
 	git clone https://github.com/ytechie/Manufacturing.DevRunner
 	git clone https://github.com/ytechie/Manufacturing.Azure
-	git clone https://github.com/ytechie/Manufacturing.WinApp
 	git clone https://github.com/ytechie/Manufacturing.Api
 	git clone https://github.com/ytechie/Manufacturing.Orleans
 	git clone https://github.com/ytechie/Manufacturing.Web
