@@ -52,8 +52,6 @@ The projects can be used individually, as a group, or even just select portions.
 
 [**Manufacturing.Api**](https://github.com/ytechie/Manufacturing.Api): An API for interacting with the portion of the framework running in the cloud.
 
-[**Manufacturing.Orleans**](https://github.com/ytechie/Manufacturing.Orleans): An experimental Orleans project for working with manufacturing sensors and other metadata.
-
 [**Manufacturing.Web**](https://github.com/ytechie/Manufacturing.Web): A web portal for users.
 
 # Installation
@@ -71,7 +69,6 @@ You can certainly use any individual project, they're all designed to be indepen
 	git clone https://github.com/ytechie/Manufacturing.DevRunner
 	git clone https://github.com/ytechie/Manufacturing.Azure
 	git clone https://github.com/ytechie/Manufacturing.Api
-	git clone https://github.com/ytechie/Manufacturing.Orleans
 	git clone https://github.com/ytechie/Manufacturing.Web
 
 Open PowerShell as an administrator and execute the following. Feel free to examine the script, but it's purpose is to set the policies for the self-hosted WebAPI as well as install the required Windows components.
